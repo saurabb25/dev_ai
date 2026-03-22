@@ -28,5 +28,8 @@ app.use("/user", authRouter)
 import projectRouter from "./routes/project.route.js"
 app.use("/project", projectRouter)
 
+import aiRouter from "./routes/ai.routes.js"
+app.use("/ai", aiRouter)
+
 
 export default app

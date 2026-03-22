@@ -12,7 +12,11 @@ const projectSchema = new mongoose.Schema({
             type: mongoose.Schema.Types.ObjectId,
             ref: "User",
         }
-    ]
+    ],
+    fileTree: {
+        type: Object,
+        default: {}
+    }
 })
 
 const Project = mongoose.model("Project", projectSchema)
